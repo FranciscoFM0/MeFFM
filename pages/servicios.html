@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Francisco Franco Martinez">
     <title>Me+FrancoFM</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- iconos redes -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- animaciones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    
 </head>
 <body>
     <!-- Francisco Franco Martinez -->
@@ -34,9 +31,9 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                      <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/sobre.html">Sobre mi</a></li>
-                      <li class="nav-item"><a class="nav-link" href="./pages/servicios.html">Servicios</a></li>
+                      <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/sobre.html">Sobre mi</a></li>
+                      <li class="nav-item"><a class="nav-link" href="../pages/servicios.html">Servicios</a></li>
                       <li class="nav-item"><a class="nav-link" href="#">Portafolio</a></li>                      
                       <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
                   </ul>
@@ -46,36 +43,44 @@
     </header>
 
     <main>  
-      <h1 class="animate__animated animate__pulse" >Bienvenidos</h1>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://placedog.net/440/280?id=61" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/porta_02.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/sobre.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://placedog.net/440/280?id=63" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://placedog.net/440/280?id=23" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="https://placedog.net/440/280?id=38" class="d-block w-100" alt="...">
+      <h1 class="animate__animated animate__bounce" >Servicios</h1>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://placedog.net/640/480?id=5" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Servicio 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non praesentium quo accusantium blanditiis debitis, voluptate id sit deleniti impedit, dignissimos laudantium mollitia et eius nam quas voluptates suscipit harum hic.</p>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="col">
+          <div class="card container_foto">
+            <img src="https://placedog.net/640/480?id=4" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Servicio 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla doloremque molestiae, quas vitae quasi itaque fuga eius nihil reprehenderit praesentium. Dignissimos, quos doloribus eveniet illum aliquam ipsum quas dolores.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-flip">
+            <img src="https://placedog.net/640/480?id=3" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Servicio 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vitae nisi suscipit, voluptatibus laborum cupiditate praesentium magnam, voluptate voluptas sapiente perferendis accusamus beatae illo placeat deserunt dolore qui harum? Dolorem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://placedog.net/640/480?id=2" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Servicio 4</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi maiores optio provident earum, non adipisci reiciendis, et quam vitae incidunt velit voluptatibus at! Asperiores similique nobis quibusdam vero repudiandae!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     

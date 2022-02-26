@@ -5,3 +5,131 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
+  color: #514B64;
+  min-height: 100vh;
+}
+
+h1{
+  text-align: center;
+}
+
+code {
+  background: #fff;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  margin: 0 0.3rem;
+}
+
+/* BEGIN: cards in servicios */
+/*transition, transform, scale*/
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor: pointer;
+}
+
+.card:hover{
+   transform: scale(1.05);
+   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+/* BEGIN: efecto sobre servicio 2 */
+/* use transition, transform*/
+.container_foto {
+	background-color: rgba(57, 62, 93, 0.7);
+	/* padding: 0; */
+	overflow: hidden;
+	/* max-width: 350px; */
+	/* margin: 5px; */
+}
+
+.container_foto img {
+	width: 100%;
+	top: 0;
+	left: 0;
+	/* opacity: 0.4; */
+	-webkit-transition: all 4s ease;
+	-moz-transition: all 4s ease;
+	-o-transition: all 4s ease;
+	-ms-transition: all 4s ease;
+	transition: all 4s ease;
+}
+
+.container_foto:hover {
+	cursor: pointer;
+}
+
+.container_foto:hover img {
+	/* opacity: 0.1; */
+	transform: scale(1.5);
+}
+
+.container_foto:hover article {
+	transform: translate(2px, -69px);
+	-webkit-transform: translate(2px, -69px);
+	-moz-transform: translate(2px, -69px);
+	-o-transform: translate(2px, -69px);
+	-ms-transform: translate(2px, -69px);
+}
+/* END: efecto sobre servicio 2 */
+
+/* Flip Cards CSS */
+.card-container {
+  perspective: 700px;
+}
+.card-flip {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  height: auto;
+  transition: all 0.5s ease-out;
+  background: white;
+  border: none;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card-flip .front {
+  position: relative;
+  z-index: 1;
+}
+
+.card-flip .back {
+  position: relative;
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+/* END: cards in servicios */
+
+/* BEGIN: imagen about me */
+.circular--landscape {
+  display: flex;
+  position: relative;
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -100px;
+  vertical-align: middle;
+}
+/* END: imagen about me */
+

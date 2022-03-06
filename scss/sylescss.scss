@@ -1,0 +1,121 @@
+
+@import "./variables.scss";
+
+*{
+    margin: 0px;  
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  /*ejemplo de nesting*/
+  main{
+      margin: $marginMain;
+    h1{
+        text-align: center;
+        background: $backgroundH1;
+        color: $colorTituloH1;
+      }    
+  }
+  
+  body {
+    background: $backgroundBody;
+    color: $colorBody;
+    min-height: 100vh;
+  }
+  
+  code {
+    background: #fff;
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    margin: 0 0.3rem;
+  }
+
+/* BEGIN: cards in servicios */
+/*transition, transform, scale*/
+  /*ejemplo de nesting*/
+.card{
+    border-radius: 4px;
+    background: $backgroundCard;
+    box-shadow: $boxShadowCard;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: $boxShadowCardHover;
+     }
+    
+  }
+  
+  /* END: efecto sobre servicio 2 */
+
+  /* Flip Cards CSS */
+  .card-container {
+    perspective: 700px;
+  }
+  .card-flip {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d;
+    height: auto;
+    transition: all 0.5s ease-out;
+    background: $backgroundCard;
+    border: none;
+  }
+  
+  .card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+  
+  .card-flip .front {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .card-flip .back {
+    position: relative;
+    z-index: 0;
+    transform: rotateY(-180deg);
+  }
+  
+  .card-container:hover .card-flip {
+    transform: rotateY(180deg);
+  }
+  /* END: cards in servicios */
+  
+  /* BEGIN: imagen about me */
+  .circular--landscape {
+    display: flex;
+    position: relative;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 50%;
+    &img {
+        width: auto;
+        height: 100%;
+        margin-left: -100px;
+        vertical-align: middle;
+      }
+  }
+
+  /* END: imagen about me */
+  
+  .form-group
+  {
+    .btn-contact{
+        color: white;
+        background-color: black;
+      }
+  }
+
+  footer{     
+      box-sizing: border-box;
+      .container {
+        position: absolute;
+      }
+  }

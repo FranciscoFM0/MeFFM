@@ -19,9 +19,7 @@ body {
 
 code {
   background: #fff;
-  padding: 0.2rem;
-  border-radius: 0.2rem;
-  margin: 0 0.3rem; }
+  border-radius: 0.2rem; }
 
 /* BEGIN: cards in servicios */
 /*transition, transform, scale*/
@@ -84,6 +82,16 @@ code {
     height: 100%;
     margin-left: -100px;
     vertical-align: middle; }
+
+.containerMedia {
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.containerCopy {
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 /* END: imagen about me */
 /*ejemplo de mixin*/

@@ -29,9 +29,9 @@
   
   code {
     background: #fff;
-    padding: 0.2rem;
+    // padding: 0.2rem;
     border-radius: 0.2rem;
-    margin: 0 0.3rem;
+    // margin: 0 0.3rem;
   }
 
 /* BEGIN: cards in servicios */
@@ -106,14 +106,22 @@
         vertical-align: middle;
       }
   }
-
+.containerMedia{
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.containerCopy{
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
   /* END: imagen about me */
   /*ejemplo de mixin*/
   @mixin botones($colorLetra, $colorBg){
     color: $colorLetra;
     background-color: $colorBg;
   }
-  
   
   .form-group
   {

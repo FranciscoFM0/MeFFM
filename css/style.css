@@ -3,9 +3,10 @@
   padding: 0px;
   box-sizing: border-box; }
 
+/*ejemplo mixin*/
 /*ejemplo de nesting*/
 main {
-  margin: 30px; }
+  margin: 20px; }
   main h1 {
     text-align: center;
     background: linear-gradient(70deg, #e6e6e6, #f7f7f7);
@@ -85,7 +86,12 @@ code {
     vertical-align: middle; }
 
 /* END: imagen about me */
+/*ejemplo de mixin*/
 .form-group .btn-contact {
+  color: white;
+  background-color: black; }
+
+.form-group .btnContacto {
   color: white;
   background-color: black; }
 

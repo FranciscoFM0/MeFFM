@@ -6,14 +6,18 @@
     padding: 0px;
     box-sizing: border-box;
   }
+/*ejemplo mixin*/
+  @mixin estiloHeader($colorbg, $colorTitulo){
+    text-align: center;
+    background: $backgroundH1;
+    color: $colorTituloH1;
+  }
 
   /*ejemplo de nesting*/
   main{
       margin: $marginMain;
     h1{
-        text-align: center;
-        background: $backgroundH1;
-        color: $colorTituloH1;
+        @include estiloHeader($backgroundH1, $colorTituloH1)
       }    
   }
   
@@ -104,6 +108,12 @@
   }
 
   /* END: imagen about me */
+  /*ejemplo de mixin*/
+  @mixin botones($colorLetra, $colorBg){
+    color: $colorLetra;
+    background-color: $colorBg;
+  }
+  
   
   .form-group
   {
@@ -111,6 +121,9 @@
         color: white;
         background-color: black;
       }
+    .btnContacto{
+        @include botones(white, black)
+      }    
   }
 
   footer{     
